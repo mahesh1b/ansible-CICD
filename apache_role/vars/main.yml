@@ -1,0 +1,4 @@
+---
+# vars file for apache_role
+var1: httpd
+path: /var/www/html/index.html

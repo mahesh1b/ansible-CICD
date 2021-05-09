@@ -1,0 +1,22 @@
+---
+# tasks file for apache_role
+ - yum:
+     name: "{{ var1 }}"
+     state: latest
+
+ - firewalld:
+     service: http
+     permanent: yes
+     state: enabled
+ 
+ - command: firewall-cmd --reload
+
+ - template:
+     src: index.html.j2
+     dest: "{{ path }}"
+
+ - service:
+     name: "{{ var1 }}"
+     state: started
+     enabled: yes
+
