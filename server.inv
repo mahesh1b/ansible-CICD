@@ -1,2 +1,2 @@
 [server]
-34.228.9.74 ansible_user=ec2-user
+34.207.119.99 ansible_user=ec2-user
