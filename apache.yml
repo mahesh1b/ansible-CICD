@@ -1,0 +1,21 @@
+---
+ - hosts: server
+   become: True
+   tasks:
+     - yum:
+         name: httpd
+         state: latest
+
+     - firewlld:
+        service: http
+        permanent: yes
+        state: enabled
+
+     - command: firewall-cmd --reload
+
+     - service:
+         name: httpd
+         state: restarted
+         enabled: yes
+
+ 
