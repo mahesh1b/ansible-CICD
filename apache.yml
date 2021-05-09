@@ -1,21 +1,6 @@
 ---
  - hosts: server
    become: True
-   tasks:
-     - yum:
-         name: httpd
-         state: latest
-
-     - firewalld:
-        service: http
-        permanent: yes
-        state: enabled
-
-     - command: firewall-cmd --reload
-
-     - service:
-         name: httpd
-         state: restarted
-         enabled: yes
-
+   roles:
+     - apache-role
  
