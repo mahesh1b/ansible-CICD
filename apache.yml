@@ -6,7 +6,7 @@
          name: httpd
          state: latest
 
-     - firewlld:
+     - firewalld:
         service: http
         permanent: yes
         state: enabled
