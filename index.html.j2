@@ -1,6 +1,7 @@
 <html>
-    <center><h1>Hey guys!
-Apache webserver {{ version_number }} is running on {{ server }}
-Enjoy!</h1>
+    <center>
+    This is a  {{ ansible_distribution }} System.
+    The system uptime is {{ ansible_uptime_seconds }}sec.
+    The Ip of system is {{ ansible_default_ipv4.address }}.
     </center>
 </html>
