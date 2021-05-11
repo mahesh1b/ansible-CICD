@@ -2,5 +2,4 @@
  - hosts: server
    become: True
    roles:
-     - httpd
- 
+     - httpd-role
